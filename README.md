@@ -1,44 +1,50 @@
-# simple_shell
+# 0x16. C - Simple Shell
 
-# A simple C shell project
+This project is an implementation of the shell created as the final project for the C code sprint at **ALX Africa**.
 
-## Description
+## Table of contents :clipboard:
 
-This is a simple UNIX command interpreter that replicates functionalities of the simple shell (sh). Additional functions are also included. This program was written entirely in C as a milestone project for Alx-Holberton School.
+ - [Description]
+ - [Installation]
+ - [Usage]
+ - [Example]
+ - [Contributors]
+ - [Acknowledgements]
+## Description :e-mail:
+This is a shell written in [C](https://en.wikipedia.org/wiki/C_(programming_language)).
+It is based on [the Thompson Shell](https://en.wikipedia.org/wiki/Thompson_shell).
 
-## Installation
+## Installation :wrench:
+Clone the below repository and compile the files into an executable using the GCC compiler.
+```
+https://github.com/Fraol123/simple_shell.git.
+```
+##Environment :evergreen_tree::evergreen_tree:
 
-Clone this repository into your working directory. Files should be compiled with GCC and the following flags: -Wall -Wextra -Werror -pedantic -Wno-format.
+Our shell was built and tested on  Ubuntu 14.04 LTS.
 
-## Usage
+### Basic usage :bulb:
+- First, [fork this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+- Then [clone it to your local machine](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+- Create an executable by running the following command:
+- `gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
+- From there, type in the following command and press your enter button.
+- `./hsh`
+- Final step: ENJOY!
 
-After compilation, the resulting program can run stand-alone, either in interactive or non-interactive mode.
+## Example :computer:
+```
+ls -la
+```
+![screenshot of shell](https://user-images.githubusercontent.com/30075600/114757753-e50c2180-9d64-11eb-95ea-fb9bba776c8c.png)
 
-## Interactive Mode
+## Contributors :sunglasses::muscle:
+* [**Fraol Tolera**](https://github.com/Fraol123)
+* [**Andrew Mukare**](https://github.com/JudgeFudge19)
+* [**Ermias Teshome**](https://github.com/ermiast)
 
-In interactive mode, simply run the program and wait for the prompt to appear. From there, you can type commands freely, exiting with either the "exit" command or ctrl-D.
-
-## Non-Interactive Mode
-
-In non-interactive mode, echo your desired command and pipe it into the program like this:
-
-echo "ls" | ./shell
-In non-interactive mode, the program will exit after finishing your desired command(s).
-
-This is the man page which contains all functions and descriptions of all the functions used in this Simple shell project. To access this page, Do:
-
-## AUTHORS
-
-This file contains the details of all the individuals that contributed to this shell project.
-
-## Features
-
-1. DIsplay a prompt and wait for the user to type a command. A command-line always ends with a new line.
-2. The prompt is displayed again each time a command has been executed.
-3. The command lines are simple, no semicolons, no pipes, no redirections, or any other advanced features.
-4. The command lines are made only of one word.No arguement will be passed to the programs.
-5.If an executable is not found the shell prints an error message and displayu the prompt again.
-
-## Credits
-
-All codes written by Ademola Glory and Emmanuel Murairi.
+## Acknowledgments :pray:
+- Our fellow cohort members.
+- The creators of the C language.
+- Our software engineer-in-residence.
+- Betty Holberton.
